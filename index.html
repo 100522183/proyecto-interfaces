@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>TRAVEL4EVER</title>
+
+        <link rel="stylesheet" href="Styles/styles.css">
     </head>
     <body>
         <header>
@@ -98,16 +100,46 @@
                     </article>
             </section>
             <aside>
-                <form class="user_login">
+                <form id="user_login">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Cathyvipi"></input>
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="12345"></input>
                     <input type="checkbox" id="recordar_credenciales" name="recordar_credenciales">Recordar credenciales</input>
-                    <button type="submit">Submit</button>
-                    <button type="button" onclick="location.href='c.html'">Register</button>
+                    <button type="submit">Iniciar sesión</button>
+                    <button type="button" onclick="location.href='c.html'">¡Regístrate!</button>
                 </form>
+                <div id="Top_destinos_mochileros">
+                    <h3>Top destinos mochileros</h3>
+                    <ul><li>Bangkok</li><li>Estocolmo</li><li>Berlín</li><li>Amsterdam</li><li>Burgos</li><li>Alahurín de la torre</li><li>Majachcalá</li><li>Estambul</li></ul>
+                </div>
+                <div id="Consejos_rápidos">
+                    <h3>Consejos rápidos</h3>
+                    <ul><li>Revisa tener las medidas sanitarias pertinentes</li><li>Comprueba las capacidades de tu pasaporte/visa</li><li>Estudia el mapa de la zona</li><li>Contrata un seguro</li><li>Revisa el transporte</li></ul>
+                </div>
+                <div id="Próximos_encuentros">
+                    <h3>Próximos encuentros</h3>
+                    <ul><li>Aranjuez 10/10</li><li>Ibiza 11/11</li><li>Casablanca 12/12</li></ul>
+                </div>
             </aside>
         </main>
+        <footer>
+            <p>&copy 2025 TRAVEL4EVER</p>
+            <ul>
+                <li>Sobre nosotros</li>
+                <li>Privacidad</li>
+                <li>FAQ</li>
+            </ul>
+            <ul>
+                <div id="logo_ig" class="logo"></div>
+                <div id="logo_fb" class="logo"></div>
+                <div id="logo_x" class="logo"></div>
+            </ul>
+            <form id="newsleter_form">
+                <label for="email">Email</label>
+                <input type="email" id="email_newsletter" name="email" placeholder="ana@gmail.com">
+                <button type="submit"></button>
+            </form> 
+        </footer>
     </body>
 </html>

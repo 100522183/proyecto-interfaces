@@ -1,5 +1,27 @@
+@font-face {
+  font-family: Fuente_principal; /* set name */
+  src: url(../Fuentes/D-DIN-Bold.otf); /* url of the font */
+}
 body{
+    font-family: Fuente_principal;
     background-color: lightblue;
+    border: 1px solid black;
+}
+nav ul{
+    display: inline-flex;
+}
+header{
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+main{
+    height: auto;
+    display: flex;
+}
+footer{
+    height: auto;
 }
 .texto_rojo{
     color: red;
