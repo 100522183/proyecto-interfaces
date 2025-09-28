@@ -6,7 +6,7 @@ body{
     font-family: Fuente_principal;
     background-color: lightblue;
     display: grid;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 1fr 8fr 1fr;
 }
 nav ul{
     display: inline-flex;
@@ -28,22 +28,36 @@ header nav ul{
 main{
     height: auto;
     display: flex;
+    width: auto;
+    justify-content: space-between;
+    gap: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+#right_upper_container{
+    background-color: violet;
+    grid-column: 1/ span 2;
+    grid-row: 1 / span 1;   
+
+}
+#right_lower_container{
+    background-color: lightgreen;
+    grid-column: 1/ span 2;
+    grid-row: 2 / span 1;   
+
+}
+#left_container{
+    background-color: orange;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;   
 }
 footer{
     height: auto;
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     width: auto;
     justify-content: space-between;
-}
-footer nav ul{
-    display: flex;
-    gap: 30px;
-    padding: 0;
-=======
-    justify-content: space-between;
->>>>>>> e8043198474f51a478e2e23275d0615c39a494b2
 }
 #footer_info{
     width: 15%;
