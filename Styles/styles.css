@@ -21,7 +21,6 @@ header nav ul{
     display: flex;
     gap: 30px;
     padding: 0;
-
 }
 main{
     height: auto;
@@ -29,6 +28,15 @@ main{
 }
 footer{
     height: auto;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+}
+footer nav ul{
+    display: flex;
+    gap: 30px;
+    padding: 0;
 }
 .texto_rojo{
     color: red;
