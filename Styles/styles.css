@@ -5,12 +5,15 @@
 body{
     font-family: Fuente_principal;
     background-color: lightblue;
-    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
 }
 nav ul{
     display: inline-flex;
 }
 header{
+    position: sticky;
+    top: 0px;
     height: auto;
     display: flex;
     align-items: center;
@@ -18,7 +21,7 @@ header{
     justify-content: space-between;
 }
 header nav ul{
-    display: flex;
+    display: inline-flex;
     gap: 30px;
     padding: 0;
 }
@@ -30,6 +33,7 @@ footer{
     height: auto;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     width: auto;
     justify-content: space-between;
 }
@@ -37,7 +41,37 @@ footer nav ul{
     display: flex;
     gap: 30px;
     padding: 0;
+=======
+    justify-content: space-between;
+>>>>>>> e8043198474f51a478e2e23275d0615c39a494b2
 }
-.texto_rojo{
-    color: red;
+#footer_info{
+    width: 15%;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+#logos{
+    display: flex;
+    flex-direction: row;
+    width: 7.5%;
+    height: 100%;
+    justify-content: center;
+}
+.logo_rss{
+    list-style-type: none;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 33%;
+}
+#logo_ig{
+    background-image: url("../ig_logo.png");
+}
+#logo_fb{
+    background-image: url("../fb_logo.png");
+}
+#logo_x{
+    background-image: url("../x_logo.png");
 }
