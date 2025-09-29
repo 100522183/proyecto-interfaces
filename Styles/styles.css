@@ -8,9 +8,6 @@ body{
     grid-template-rows: 1fr 10fr 1fr;
     margin: 0;
 }
-nav ul{
-    display: inline-flex;
-}
 section{
     border-radius: 20px;
 }
@@ -30,10 +27,17 @@ header{
 main{
     margin: 1%;
 }
-header nav ul{
+#nav_menu{
     display: inline-flex;
     gap: 30px;
     padding: 0;
+}
+#logo{  
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("logo.jpg");
 }
 main{
     height: auto;
@@ -47,10 +51,81 @@ main{
 }
 #left_upper_container{
     padding-left: 2.5%;
-    background-color: violet;
-    grid-column: 1/ span 2;
+    padding-right: 2.5%;
+    background-color: lightblue;
+    grid-column: 1/ span 2; 
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#banner{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #000;
+    background: url("banner.jpg");
+    background-size: cover;
     grid-row: 1 / span 1;
 }
+.texto_banner{
+    background-color: lightblue; 
+    padding: 0.5%;      
+}
+#packs_de_viaje{
+    padding-left: 2.5%;
+    background-color: aliceblue;
+    grid-row: 2 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#atras{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#avance{
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#pack1{
+    grid-column: 2 / span 4;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    box-sizing: border-box;
+    background-image: url("pack_eu.jpg");
+    background-size: cover;
+}
+#pack1 h2 {
+    border: 1px solid #000;
+    background-color: #fff;
+    align-self: baseline;
+}
+
+#pack1 h3 {
+    border: 1px solid #000;
+    background-color: #fff;
+    align-self: baseline;
+}
+
+#price1 {
+    align-self: self-end;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#comprar1 {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
 #left_lower_container{
     padding-left: 2.5%;
     background-color: lightgreen;
@@ -108,13 +183,13 @@ footer{
     background-size: contain;
 }
 #logo_ig{
-    background-image: url("../ig_logo.png");
+    background-image: url("ig_logo.png");
 }
 #logo_fb{
-    background-image: url("../fb_logo.png");
+    background-image: url("fb_logo.png");
 }
 #logo_x{
-    background-image: url("../x_logo.png");
+    background-image: url("x_logo.png");
 }
 #user_login{
     justify-self: center;
@@ -122,4 +197,5 @@ footer{
     background-color: deeppink;
     padding: 10%;
     border-radius: 20px;
+    grid-row: 1 / span 1;
 }
