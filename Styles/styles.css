@@ -130,16 +130,42 @@ main{
     background-color: lightgreen;
     grid-column: 1/ span 2;
     grid-row: 2 / span 1;
-
+    display: grid;
+    grid-template-rows: 7vh 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-#Experiencias{
+#titulo_exp{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    align-self: center;
+}
+#experiencias{
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
 }
-.experiencia{
-    grid-column: auto/ span 1;
+.experiencia1, .experiencia2, .experiencia3, .experiencia4, .experiencia5, .experiencia6{
     grid-row: auto/ span 1;
+    grid-column: auto/ span 1;
+    border: 1px solid #000;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.like{
+    justify-self: end;
+    align-self: start;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
 }
 #right_container{
     padding-left: 2.5%;
