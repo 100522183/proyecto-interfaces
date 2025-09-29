@@ -103,6 +103,12 @@ main{
     background-image: url("pack_eu.jpg");
     background-size: cover;
 }
+#price1 {
+    align-self: self-end;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
 #pack1 h2 {
     border: 1px solid #000;
     background-color: #fff;
@@ -114,13 +120,6 @@ main{
     background-color: #fff;
     align-self: baseline;
 }
-
-#price1 {
-    align-self: self-end;
-    border: 1px solid #000;
-    background-color: #fff;
-}
-
 #comprar1 {
     background-color: #fff;
     border: 1px solid #000;
