@@ -163,6 +163,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 #experiencia1{
     background-image: url('albergue_praga.jpg');
