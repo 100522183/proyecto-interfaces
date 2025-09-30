@@ -15,6 +15,8 @@ div{
     border-radius: 20px;
 }
 header{
+    padding-left: 1%;
+    padding-right: 1%;
     background-color: blueviolet;
     position: sticky;
     top: 0px;
@@ -113,13 +115,13 @@ main{
     background-color: #fff;
 }
 
-#pack1 h2 {
+#pack1 #título_pack_europeo{
     border: 1px solid #000;
     background-color: #fff;
     align-self: baseline;
 }
 
-#pack1 h3 {
+#pack1 #descripcion_pack_europeo {
     border: 1px solid #000;
     background-color: #fff;
     align-self: baseline;
@@ -130,7 +132,7 @@ main{
 }
 
 #left_lower_container{
-    padding-left: 2.5%;
+    padding: 1%;
     background-color: lightgreen;
     grid-column: 1/ span 2;
     grid-row: 2 / span 1;
@@ -151,7 +153,8 @@ main{
     grid-template-rows: 1fr 1fr;
 
 }
-.experiencia1, .experiencia2, .experiencia3, .experiencia4, .experiencia5, .experiencia6{
+.experiencia{
+    padding:3%;
     grid-row: auto/ span 1;
     grid-column: auto/ span 1;
     border: 1px solid #000;
@@ -159,17 +162,48 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-size: contain;
+}
+#experiencia1{
+    background-image: url('albergue_praga.jpg');
+}
+#experiencia2{
+    background-image: url('dublin.JPEG');
+}
+#experiencia3{
+    background-image: url('rutas_chile.jpg');
+}
+#experiencia4{
+    background-image: url('experiencias_australia.jpg');
+}
+#experiencia5{
+    background-image: url('albergue_china.jpg');
+}
+#experiencia6{
+    background-image: url('zimbague.jpg');
+}
+.experiencia p{
+    margin: 1%;
+    padding: 1%;
+    white-space: nowrap;
+    background-color: #fff;
+    width: min-content;
+    border-radius: 10px;
 }
 .like{
-    justify-self: end;
-    align-self: start;
-    background-color: white;
-    border-radius: 50%;
+    background-image: url('heart-icon.png');
+    background-size: contain;
     width: 25px;
     height: 25px;
     text-align: center;
     line-height: 25px;
     font-weight: bold;
+    margin: 1.5%;
+    margin-bottom: 0;
+    margin-right: 3%;
+}
+.ver_más{
+    margin: 2%;
 }
 #right_container{
     padding-left: 2.5%;
@@ -181,7 +215,12 @@ main{
     grid-template-rows: 25vh 25vh 17vh 15vh;
     justify-items: left;
 }
+h3{
+    font-size: 2rem;
+}
 footer{
+    padding-left: 1%;
+    padding-right: 1%;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -225,7 +264,12 @@ footer{
     justify-self: center;
     align-self: center;
     background-color: deeppink;
-    padding: 10%;
+    padding: 5%;
     border-radius: 20px;
     grid-row: 1 / span 1;
+}
+.exp_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
