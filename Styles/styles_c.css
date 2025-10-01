@@ -1,0 +1,269 @@
+@font-face {
+  font-family: Fuente_principal; /* set name */
+  src: url(../Fuentes/D-DIN-Bold.otf); /* url of the font */
+}
+body{
+    font-family: Fuente_principal;
+    display: grid;
+    grid-template-rows: auto 10fr auto;
+    margin: 0;
+}
+section{
+    border-radius: 20px;
+}
+div{
+    border-radius: 20px;
+}
+header{
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+}
+main{
+    margin: 1%;
+}
+#nav_menu{
+    display: inline-flex;
+    gap: 30px;
+    padding: 0;
+}
+#logo{  
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/logo.jpg");
+}
+main{
+    height: auto;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    gap: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.5fr; 
+}
+#left_upper_container{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: lightblue;
+    grid-column: 1/ span 1; 
+    grid-row: 1 / span 1;
+}
+#packs_de_viaje{
+    padding: 1%;
+    margin: 1%;
+    background-color: aliceblue;
+}
+#pack1{
+    width: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    box-sizing: border-box;
+    background-image: url("../images/pack_eu.jpg");
+    background-size: cover;
+}
+#price1 {
+    font-size: 2em;
+    align-self: self-end;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#pack1 #título_pack_europeo{
+    font-size: 2em;
+    border: 1px solid #000;
+    background-color: #fff;
+    align-self: baseline;
+    border-radius: 8px;
+    padding:0.5%;
+}
+
+#pack1 #descripcion_pack_europeo {
+    font-size: 1.5em;
+    border: 1px solid #000;
+    background-color: #fff;
+    align-self: baseline;
+    border-radius: 8px;
+    padding:0.5%;
+}
+#comprar1 {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+#left_lower_container{
+    padding: 1%;
+    background-color: lightgreen;
+    grid-column: 1/ span 1;
+    grid-row: 2 / span 1;
+}
+#titulo_pack{
+    justify-self: start;
+    margin-left: 5%;
+}
+#descripcion_pack{
+    margin: 5%;
+}
+#right_container{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: orange;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;     
+}
+#formulario_compra{
+    display: grid;
+    grid-template-rows: repeat(9, 8vh);
+    grid-template-columns: 1fr 1fr;
+}
+#right_container h1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#nombre{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    width: 50%;
+    justify-self: center;
+    padding: 1%;
+    margin: 1%;
+}
+#email{
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    width: 50%;
+    justify-self: center;
+    padding: 1%;
+    margin: 1%;
+}
+#metodo_pago{
+    grid-column: 1 / span 1;    
+    grid-row: 4 / span 1;   
+    justify-self: end;
+    align-self: center;
+}
+#tipo_tarjeta-dropdown{
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+    width: 50%;
+    justify-self: center;
+    padding: 1%;
+    margin: 1%;
+}
+#numero_tarjeta{
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    width: 50%;
+    justify-self: center;
+    padding: 1%;
+    margin: 1%;
+}
+#titular{
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
+    width: 50%;
+    justify-self: center;
+    padding: 1%;
+    margin: 1%;
+}
+#fecha_de_caducidad{
+    grid-column: 1 / span 1;
+    grid-row: 8 / span 1;
+    width: 13.5vw;
+    justify-self: end;
+    padding: 1%;
+    margin: 1%;
+}
+#cvv{
+    grid-column: 2 / span 1;
+    grid-row: 8 / span 1;
+    width: 13.5vw;
+    justify-self: start;
+    padding: 1%;
+    margin: 1%;
+}
+#boton_comprar{
+    grid-column: 1 / span 1;
+    grid-row: 9 / span 1;
+    justify-self: center;
+    align-self: center;
+    padding: 1%;
+    border-radius: 20px;
+}
+#boton_borrar{
+    grid-column: 2 / span 1;
+    grid-row: 9 / span 1;
+    justify-self: center;   
+    align-self: center;
+    padding: 1%;
+    border-radius: 20px;
+}
+footer{
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    background-color: blue;
+}
+#footer_info{
+    width: 15%;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+#logos{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_rss{
+    list-style-type: none;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+}
+#logo_ig{
+    background-image: url("../images/ig_logo.png");
+}
+#logo_fb{
+    background-image: url("../images/fb_logo.png");
+}
+#logo_x{
+    background-image: url("../images/x_logo.png");
+}
+#user_login{
+    justify-self: center;
+    align-self: center;
+    background-color: deeppink;
+    padding: 5%;
+    border-radius: 20px;
+    grid-row: 1 / span 1;
+}
+.exp_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
