@@ -110,14 +110,14 @@ main{
     background-size: cover;
 }
 #price1 {
-    font-size: 2rem;
+    font-size: 2em;
     align-self: self-end;
     border: 1px solid #000;
     background-color: #fff;
 }
 
 #pack1 #título_pack_europeo{
-    font-size: 2rem;
+    font-size: 2em;
     border: 1px solid #000;
     background-color: #fff;
     align-self: baseline;
@@ -126,7 +126,7 @@ main{
 }
 
 #pack1 #descripcion_pack_europeo {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     border: 1px solid #000;
     background-color: #fff;
     align-self: baseline;
@@ -243,7 +243,7 @@ main{
     justify-items: left;
 }
 h3{
-    font-size: 2rem;
+    font-size: 2em;
 }
 footer{
     padding-left: 1%;
@@ -299,4 +299,20 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+@media screen and (max-width: 768px) {
+  #right_container {
+    font-size: 0.8em;
+  }
+  #logo{  
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/logo.jpg");
+    
+  }
+  #nav_menu{
+    gap: 20px;
+  }
 }
