@@ -1,0 +1,307 @@
+@font-face {
+  font-family: Fuente_principal; /* set name */
+  src: url(../Fuentes/D-DIN-Bold.otf); /* url of the font */
+}
+body{
+    font-family: Fuente_principal;
+    display: grid;
+    grid-template-rows: auto 10fr auto;
+    margin: 0;
+}
+section{
+    border-radius: 20px;
+}
+div{
+    border-radius: 20px;
+}
+header{
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+}
+main{
+    margin: 1%;
+}
+#nav_menu{
+    display: inline-flex;
+    gap: 30px;
+    padding: 0;
+}
+#logo{  
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/logo.jpg");
+}
+main{
+    height: auto;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    gap: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+#left_upper_container{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: lightblue;
+    grid-column: 1/ span 2; 
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#banner{
+    margin: 1%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #000;
+    background: url("../images/banner.jpg");
+    background-size: cover;
+    grid-row: 1 / span 1;
+
+}
+.texto_banner{
+    background-color: lightblue; 
+    padding: 0.5%;      
+}
+#packs_de_viaje{
+    padding: 1%;
+    margin: 1%;
+    background-color: aliceblue;
+    grid-row: 2 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#atras{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#avance{
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#pack1{
+    grid-column: 2 / span 4;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    box-sizing: border-box;
+    background-image: url("../images/pack_eu.jpg");
+    background-size: cover;
+}
+#price1 {
+    font-size: 2em;
+    align-self: self-end;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#pack1 #título_pack_europeo{
+    font-size: 2em;
+    border: 1px solid #000;
+    background-color: #fff;
+    align-self: baseline;
+    border-radius: 8px;
+    padding:0.5%;
+}
+
+#pack1 #descripcion_pack_europeo {
+    font-size: 1.5em;
+    border: 1px solid #000;
+    background-color: #fff;
+    align-self: baseline;
+    border-radius: 8px;
+    padding:0.5%;
+}
+#comprar1 {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+#left_lower_container{
+    padding: 1%;
+    background-color: lightgreen;
+    grid-column: 1/ span 2;
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-rows: 7vh 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#titulo_exp{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    align-self: center;
+}
+#experiencias{
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.experiencia{
+    padding:3%;
+    grid-row: auto/ span 1;
+    grid-column: auto/ span 1;
+    border: 1px solid #000;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#experiencia1{
+    background-image: url('albergue_praga.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/albergue_praga.jpg');
+}
+#experiencia2{
+    background-image: url('dublin.JPEG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/dublin.JPEG');
+}
+#experiencia3{
+    background-image: url('rutas_chile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/rutas_chile.jpg');
+}
+#experiencia4{
+    background-image: url('experiencias_australia.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/experiencias_australia.jpg');
+}
+#experiencia5{
+    background-image: url('albergue_china.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/albergue_china.jpg');
+}
+#experiencia6{
+    background-image: url('zimbague.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/zimbague.jpg');
+}
+.experiencia p{
+    margin: 1%;
+    padding: 1%;
+    white-space: nowrap;
+    background-color: #fff;
+    width: min-content;
+    border-radius: 10px;
+}
+.like{
+    background-image: url('../images/heart-icon.png');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    margin: 1.5%;
+    margin-bottom: 0;
+    margin-right: 3%;
+}
+.ver_más{
+    margin: 2%;
+}
+#right_container{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: orange;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;   
+    display: grid;
+    grid-template-rows: 25vh 25vh 17vh 15vh;
+    justify-items: left;
+}
+h3{
+    font-size: 2em;
+}
+footer{
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    background-color: blue;
+}
+#footer_info{
+    width: 15%;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+#logos{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_rss{
+    list-style-type: none;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+}
+#logo_ig{
+    background-image: url("../images/ig_logo.png");
+}
+#logo_fb{
+    background-image: url("../images/fb_logo.png");
+}
+#logo_x{
+    background-image: url("../images/x_logo.png");
+}
+#user_login{
+    justify-self: center;
+    align-self: center;
+    background-color: deeppink;
+    padding: 5%;
+    border-radius: 20px;
+    grid-row: 1 / span 1;
+}
+.exp_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+@media screen and (max-width: 768px) {
+  #right_container {
+    font-size: 0.5em;
+  }
+}
