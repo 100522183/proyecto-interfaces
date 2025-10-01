@@ -162,24 +162,44 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 #experiencia1{
+    background-image: url('albergue_praga.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url('../images/albergue_praga.jpg');
 }
 #experiencia2{
+    background-image: url('dublin.JPEG');
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url('../images/dublin.JPEG');
 }
 #experiencia3{
+    background-image: url('rutas_chile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url('../images/rutas_chile.jpg');
 }
 #experiencia4{
+    background-image: url('experiencias_australia.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url('../images/experiencias_australia.jpg');
 }
 #experiencia5{
+    background-image: url('albergue_china.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url('../images/albergue_china.jpg');
 }
 #experiencia6{
+    background-image: url('zimbague.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url('../images/zimbague.jpg');
 }
 .experiencia p{
@@ -272,4 +292,99 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+#registro_a{
+    height: auto;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    gap: 20px;
+    display: grid;
+    grid-template-rows: repeat(8, 5vh); 
+    grid-template-columns: 1fr 1fr;
+}
+#registro_a h1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#nombre{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    width: 50%;
+    justify-self: end;
+    padding: 1%;
+    margin: 1%;
+}
+#apellidos{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    width: 50%;
+    justify-self: start ;
+    padding: 1%;
+    margin: 1%;
+}
+#email{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    width: 50%;
+    justify-self: end;
+    padding: 1%;
+    margin: 1%;
+}
+#confirm_email{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    width: 50%;
+    justify-self: start;
+    padding: 1%;
+    margin: 1%;
+}
+#fecha_de_nacimiento{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    width: 50%;
+    justify-self: end;
+    padding: 1%;
+    margin: 1%;
+}
+#usuario{
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    width: 50%;
+    justify-self: end;
+    padding: 1%;
+    margin: 1%;
+}
+#contraseña{
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
+    width: 50%;
+    justify-self: start;
+    padding: 1%;
+    margin: 1%;
+}
+#subir_imagen{
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    justify-self: end;
+    align-self: center;
+}
+#img_perfil{
+    grid-column: 2 / span 1;
+    grid-row: 6 / span 1;
+}
+#politica{
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+    justify-self: end;
+}
+#registro_a button{
+    grid-column: 2 / span 1;
+    grid-row: 8 / span 1;
+    justify-self: start;
+    padding: 1%;
+    margin: 1%;
 }
