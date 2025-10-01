@@ -100,27 +100,34 @@
                 </div>
             </div>
             <div id="right_container">
-                <form id="user_login">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Cathyvipi"></input><br>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="12345"></input><br>
-                    <input type="checkbox" id="recordar_credenciales" name="recordar_credenciales">Recordar credenciales</input><br>
-                    <button onclick="location.href='versión_b.html'" type="button">Iniciar sesión</button>
-                    <button type="button" onclick="location.href='versión_a.html'">¡Regístrate!</button>
+                <section id="sección_de_usuario">
+                    <h2>Manuel Carrera</h2>
+                    <div id="img_usuario"></div>
+                    <button id="cerrar_sesion" type="button">Cerrar sesión</button>
+                </section>
+                <br>
+                <form id="busca_experiencias">
+                        <input type="checkbox">África</input>
+                        <input type="checkbox">Europa</input>
+                        <input type="checkbox">Oceanía</input>
+                        <input type="checkbox">América</input>
+                        <input type="text" placeholder="Búsqueda"></input>
                 </form>
-                <div id="Top_destinos_mochileros">
-                    <h3>Top destinos mochileros</h3>
-                    <ul><li>Bangkok</li><li>Estocolmo</li><li>Berlín</li><li>Amsterdam</li><li>Burgos</li><li>Alahurín de la torre</li><li>Majachcalá</li><li>Estambul</li></ul>
-                </div>
-                <div id="Consejos_rápidos">
-                    <h3>Consejos rápidos</h3>
-                    <ul><li>Revisa tener las medidas sanitarias pertinentes</li><li>Comprueba las capacidades de tu pasaporte/visa</li><li>Estudia el mapa de la zona</li><li>Contrata un seguro</li><li>Revisa el transporte</li></ul>
-                </div>
-                <div id="Próximos_encuentros">
-                    <h3>Próximos encuentros</h3>
-                    <ul><li>Aranjuez 10/10</li><li>Ibiza 11/11</li><li>Casablanca 12/12</li></ul>
-                </div>
+                <section>
+                    <h2>Últimos Consejos</h2>
+                    <ul>
+                        <li>Países con riesgos</li>
+                        <li>Planea tus viajes</li>
+                        <li>Comparadores de precios</li>
+                    </ul>
+                    <h2>Tienes algún consejo?</h2>
+                    <form>
+                        <input type="text" name="titulo_consejo" placeholder="Título del consejo">
+                        <input type="text" name="consejo" placeholder="Escribe aquí tu consejo">
+                        <input type="submit">Enviar</input>
+                    </form>
+                    <div id="Calendario"></div>
+                </section>
             </div>
         </main>
         <footer>
