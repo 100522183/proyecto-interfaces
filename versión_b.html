@@ -3,7 +3,7 @@
     <head>
         <title>TRAVEL4EVER</title>
 
-        <link rel="stylesheet" href="Styles/styles.css">
+        <link rel="stylesheet" href="Styles/styles_b.css">
     </head>
     <body>
         <header>
@@ -103,30 +103,33 @@
                 <section id="sección_de_usuario">
                     <h2>Manuel Carrera</h2>
                     <div id="img_usuario"></div>
-                    <button id="cerrar_sesion" type="button">Cerrar sesión</button>
+                    <button id="cerrar_sesion" type="button" onclick="location.href='index.html'">Cerrar sesión</button>
                 </section>
                 <br>
                 <form id="busca_experiencias">
-                        <input type="checkbox">África</input>
-                        <input type="checkbox">Europa</input>
-                        <input type="checkbox">Oceanía</input>
-                        <input type="checkbox">América</input>
-                        <input type="text" placeholder="Búsqueda"></input>
+                    <h2>Busca experiencias por continente:</h2>
+                    <div id="checkbox1"><input type="checkbox">África</input></div>
+                    <div id="checkbox2"><input type="checkbox">Oceanía</input></div>
+                    <div id="checkbox3"><input type="checkbox">Europa</input></div>
+                    <div id="checkbox4"><input type="checkbox">América</input></div>
+                    <input type="text" id="buscar" name="buscar" placeholder="Buscar..."></input>
                 </form>
-                <section>
-                    <h2>Últimos Consejos</h2>
+                <section id="consejos_y_calendario">
+                    <h2 id="consejo1">Últimos Consejos</h2>
                     <ul>
                         <li>Países con riesgos</li>
                         <li>Planea tus viajes</li>
                         <li>Comparadores de precios</li>
                     </ul>
-                    <h2>Tienes algún consejo?</h2>
+                    <h2 id="consejo2">Tienes algún consejo?</h2>
                     <form>
-                        <input type="text" name="titulo_consejo" placeholder="Título del consejo">
-                        <input type="text" name="consejo" placeholder="Escribe aquí tu consejo">
-                        <input type="submit">Enviar</input>
+                        <div id="titulo_consejo"><input type="text" name="titulo_consejo" placeholder="Título del consejo"></div>
+                        <div id="cuerpo_consejo">  
+                            <input type="text" name="consejo" placeholder="Escribe aquí tu consejo">
+                            <input type="submit"></input>
+                        </div>
                     </form>
-                    <div id="Calendario"></div>
+                    <div id="calendario"></div>
                 </section>
             </div>
         </main>

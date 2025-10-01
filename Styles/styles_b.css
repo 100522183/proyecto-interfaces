@@ -239,11 +239,137 @@ main{
     grid-column: 3 / span 1;
     grid-row: 1 / span 2;   
     display: grid;
-    grid-template-rows: 25vh 25vh 17vh 15vh;
-    justify-items: left;
+    grid-template-rows: 15vh 20vh 50vh;
 }
-h3{
-    font-size: 2rem;
+#sección_de_usuario{
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: 5vh 10vh;
+    grid-template-columns: 1fr 1fr;
+}
+#sección_de_usuario h2{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+    padding-left: 15%;
+}
+#img_usuario{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-image: url("img_user.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#cerrar_sesion{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    justify-self: start;
+    align-self: center;
+}
+#busca_experiencias{
+    grid-row: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: 5vh 5vh 5vh 5vh;
+    grid-template-columns: 1fr 1fr;
+}
+#busca_experiencias h2{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+    padding-left: 15%;
+    margin: 1%;
+}
+#checkbox1{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    justify-self: center;
+    align-self: center;
+
+}
+#checkbox2{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    justify-self: start;
+    align-self: center;
+}
+#checkbox3{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#checkbox4{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    justify-self: start;
+    align-self: center;
+}
+#buscar{
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+    padding: 1%;
+    margin: 1%;
+}
+#consejos_y_calendario{
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: 5vh 10vh 5vh 5vh 5vh 25vh;
+}
+#consejo1{
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+    padding-left: 15%;
+    margin: 1%;
+}
+#consejos_y_calendario ul{
+    grid-row: 2 / span 1;
+    justify-self: start;
+    align-self: center;
+    padding-left: 20%;
+    margin: 1%;
+}
+#consejo2{
+    grid-row: 3 / span 1;
+    justify-self: start;
+    align-self: center;
+    padding-left: 15%;
+    margin: 1%;
+}
+#titulo_consejo{
+    grid-row: 4 / span 1;
+    justify-self: start;
+    align-self: center;
+    width: 50%;
+    padding-left: 15%;
+    margin: 1%;
+}
+#cuerpo_consejo{
+    grid-row: 5 / span 1;
+    justify-self: start;
+    align-self: center;
+    width: 50%;
+    padding-left: 15%;
+    margin: 1%;
+}
+#calendario{
+    grid-row: 6 / span 1;
+    background-image: url(calendario.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 footer{
     padding-left: 1%;
