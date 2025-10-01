@@ -39,7 +39,7 @@ main{
     width: 60px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("logo.jpg");
+    background-image: url("../images/logo.jpg");
 }
 main{
     height: auto;
@@ -67,7 +67,7 @@ main{
     justify-content: center;
     display: flex;
     border: 1px solid #000;
-    background: url("banner.jpg");
+    background: url("../images/banner.jpg");
     background-size: cover;
     grid-row: 1 / span 1;
 
@@ -106,7 +106,7 @@ main{
     justify-content: space-between;
     height: auto;
     box-sizing: border-box;
-    background-image: url("pack_eu.jpg");
+    background-image: url("../images/pack_eu.jpg");
     background-size: cover;
 }
 #price1 {
@@ -162,25 +162,25 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-size: contain;
+    background-size: cover;
 }
 #experiencia1{
-    background-image: url('albergue_praga.jpg');
+    background-image: url('../images/albergue_praga.jpg');
 }
 #experiencia2{
-    background-image: url('dublin.JPEG');
+    background-image: url('../images/dublin.JPEG');
 }
 #experiencia3{
-    background-image: url('rutas_chile.jpg');
+    background-image: url('../images/rutas_chile.jpg');
 }
 #experiencia4{
-    background-image: url('experiencias_australia.jpg');
+    background-image: url('../images/experiencias_australia.jpg');
 }
 #experiencia5{
-    background-image: url('albergue_china.jpg');
+    background-image: url('../images/albergue_china.jpg');
 }
 #experiencia6{
-    background-image: url('zimbague.jpg');
+    background-image: url('../images/zimbague.jpg');
 }
 .experiencia p{
     margin: 1%;
@@ -191,7 +191,7 @@ main{
     border-radius: 10px;
 }
 .like{
-    background-image: url('heart-icon.png');
+    background-image: url('../images/heart-icon.png');
     background-size: contain;
     width: 25px;
     height: 25px;
@@ -252,13 +252,13 @@ footer{
     width: 50px;
 }
 #logo_ig{
-    background-image: url("ig_logo.png");
+    background-image: url("../images/ig_logo.png");
 }
 #logo_fb{
-    background-image: url("fb_logo.png");
+    background-image: url("../images/fb_logo.png");
 }
 #logo_x{
-    background-image: url("x_logo.png");
+    background-image: url("../images/x_logo.png");
 }
 #user_login{
     justify-self: center;
