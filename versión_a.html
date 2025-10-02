@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
         <title>TRAVEL4EVER</title>
 
         <link rel="stylesheet" href="Styles/styles_a.css">
@@ -8,12 +9,14 @@
     <body>
         <header>
             <h1>TRAVEL4EVER</h1>
-            <nav id="nav_menu">
-                <li>Inicio</li>
-                <li>Experiencias</li>
-                <li>Consejos</li>
-                <li>Foro</li>
-                <li>Contacto</li>
+            <nav>
+                <ul id="nav_menu">
+                    <li>Inicio</li>
+                    <li>Experiencias</li>
+                    <li>Consejos</li>
+                    <li>Foro</li>
+                    <li>Contacto</li>
+                </ul>
             </nav>
             <div id="logo"></div>
             <div id="language_selector">
@@ -27,24 +30,25 @@
         </header>
         <main id="registro_a">
             <h2>REGISTRO DE NUEVOS USUARIOS</h2>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre"></input>
-            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"></input>
-            <input type="email" id="email" name="email" placeholder="Email"></input>
-            <input type="email" id="confirm_email" name="confirmación_de_email" placeholder="Confirma tu email"></input>
-            <input type="text" id="fecha_de_nacimiento" name="fecha_de_nacimiento" placeholder="Fecha de nacimiento"></input>
-            <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario"></input>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Crea una contraseña segura"></input>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="email" id="confirm_email" name="confirmación_de_email" placeholder="Confirma tu email">
+            <input type="text" id="fecha_de_nacimiento" name="fecha_de_nacimiento" placeholder="Fecha de nacimiento">
+            <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario">
+            <input type="password" id="contraseña" name="contraseña" placeholder="Crea una contraseña segura">
             <h4 id="subir_imagen">Sube una imagen de perfil:</h4>
             <div id="img_perfil">
                 <button type="button" id="boton_subir_imagen">Examinar...</button>
             </div>
             <div id="politica">
-                <input type="checkbox" id="politica_privacidad" name="politica_privacidad">Acepto la <a href="blank">Poltica de privacidad</a></input>
+                <input type="checkbox" id="politica_privacidad" name="politica_privacidad">
+                <label>Acepto la <a href="blank">Poltica de privacidad</a></label>
             </div>
             <button type="button" onclick="location.href='versión_b.html'">Guardar datos y acceder</button>
         </main>
         <footer>
-            <p>&copy 2025 TRAVEL4EVER</p>
+            <p>&copy; 2025 TRAVEL4EVER</p>
             <ul id="footer_info">
                 <li>Sobre nosotros</li>
                 <li>Privacidad</li>
