@@ -294,8 +294,8 @@ footer{
     }
     footer{
         display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 2;
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
     }
     footer p{
         grid-column: 1;
