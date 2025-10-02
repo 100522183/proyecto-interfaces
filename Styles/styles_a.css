@@ -12,11 +12,11 @@ div{
     box-sizing: border-box; /* Aplica el modelo de caja border-box a todos los elementos */
 }
 body{
-    width: 100vw;
     font-family: Fuente_principal;
     display: grid;
     grid-template-rows: auto 10fr auto;
     margin: 0;
+    height: auto;
 }
 section{
     border-radius: 20px;
@@ -51,6 +51,7 @@ body{
 main{
     margin: 5%;
     padding: 2%;
+    margin-inline: 20%;
     border-radius: 10px;
     background-color: blueviolet;
 }
@@ -58,7 +59,8 @@ main{
     padding-left: 2%;
     padding-right: 2%;
     height: auto;
-    width: 100%;
+    display: flex;
+    width: auto;
     gap: 20px;
     justify-content: space-between;
     display: grid;
@@ -90,14 +92,14 @@ main{
 
 #registro_a{
     display: flex;
-    width: 100%;
+    width: auto;
     justify-content: space-between;
     gap: 20px;
     display: grid;
-    grid-template-rows: repeat(8, 1fr); 
+    grid-template-rows: repeat(8, 5vh); 
     grid-template-columns: 1fr 1fr;
 }
-#registro_a h1{
+#registro_a h2{
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     justify-self: center;
@@ -325,17 +327,17 @@ footer{
 }
 @media screen and (max-width: 600px){
   #registro_a{
-    font-size: 0.9em;
+    font-size: 1em;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     align-items: center;
-    width: 1fr;
   }
-  #registro_a h1{
+  #registro_a h2{
+    font-size: 1.5em;
     grid-column: auto;
     grid-row: auto;
-    width: 1fr;
+    width: 100%;
     height: auto;
     justify-self: center;
   }
@@ -351,5 +353,13 @@ footer{
     grid-column: auto;
     justify-self: center;
   }
-
+  #politica {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+  }
+  #politica a{
+            padding-left: 2%;
+  }
 }
