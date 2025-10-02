@@ -129,7 +129,7 @@ main{
     grid-template-rows: repeat(9, 8vh);
     grid-template-columns: 1fr 1fr;
 }
-#right_container h1{
+#right_container h2{
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     justify-self: center;
