@@ -229,12 +229,13 @@ main{
     background-position: center;
     background-image: url('../images/zimbague.jpg');
 }
-.experiencia p{
+.experiencia h3{
     margin: 1%;
     padding: 1%;
     white-space: nowrap;
     background-color: #fff;
     width: min-content;
+    font-size: 1.2em;
     border-radius: 10px;
 }
 .like{
@@ -272,7 +273,6 @@ main{
 #button_slide{
     display: none;
 }
-
 #user_login{
     justify-self: center;
     align-self: center;
@@ -281,7 +281,6 @@ main{
     border-radius: 20px;
     grid-row: 1 / span 1;
 }
-
 footer{
     padding-left: 2%;
     padding-right: 2%;
