@@ -28,24 +28,24 @@
                     </select>
             </div>
         </header>
-        <main id="registro_a">
-            <h2>REGISTRO DE NUEVOS USUARIOS</h2>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
-            <input type="email" id="email" name="email" placeholder="Email">
-            <input type="email" id="confirm_email" name="confirmación_de_email" placeholder="Confirma tu email">
-            <input type="text" id="fecha_de_nacimiento" name="fecha_de_nacimiento" placeholder="Fecha de nacimiento">
-            <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario">
-            <input type="password" id="contraseña" name="contraseña" placeholder="Crea una contraseña segura">
-            <h4 id="subir_imagen">Sube una imagen de perfil:</h4>
-            <div id="img_perfil">
-                <button type="button" id="boton_subir_imagen">Examinar...</button>
-            </div>
-            <div id="politica">
-                <input type="checkbox" id="politica_privacidad" name="politica_privacidad">
-                <label>Acepto la <a href="blank">Poltica de privacidad</a></label>
-            </div>
-            <button type="button" onclick="location.href='versión_b.html'">Guardar datos y acceder</button>
+        <main>
+            <form name="registro_a" id="registro_a">
+                <h2>REGISTRO DE NUEVOS USUARIOS</h2>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="email" id="confirm_email" name="confirmación_de_email" placeholder="Confirma tu email">
+                <input type="text" id="fecha_de_nacimiento" name="fecha_de_nacimiento" placeholder="Fecha de nacimiento">
+                <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario">
+                <input type="password" id="contraseña" name="contraseña" placeholder="Crea una contraseña segura">
+                <h4 id="subir_imagen">Sube una imagen de perfil:</h4>
+                <button type="button" id="img_perfil">Examinar...</button>
+                <div name="politica" id="politica">
+                    <input type="checkbox" id="politica_privacidad" name="politica_privacidad">
+                    <label>Acepto la <a href="blank">Poltica de privacidad</a></label>
+                </div>
+                <button type="button" id="confirmar_datos" onclick="location.href='versión_b.html'">Guardar datos y acceder</button>
+            </form>
         </main>
         <footer>
             <p>&copy; 2025 TRAVEL4EVER</p>
@@ -59,7 +59,7 @@
                 <li id="logo_fb" class="logo_rss" onclick="location.href='index.html'"></li>
                 <li id="logo_x" class="logo_rss" onclick="location.href='index.html'"></li>
             </ul>
-            <form id="newsletter_form">
+            <form name="newsletter_form" id="newsletter_form">
                 <input type="email" id="email_newsletter" name="email" placeholder="Email">
                 <button type="submit">¡Suscribete al Newsletter!</button>
             </form> 
