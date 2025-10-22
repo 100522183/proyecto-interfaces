@@ -35,16 +35,16 @@
                 <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
                 <input type="email" id="email" name="email" placeholder="Email">
                 <input type="email" id="confirm_email" name="confirmación_de_email" placeholder="Confirma tu email">
-                <input type="text" id="fecha_de_nacimiento" name="fecha_de_nacimiento" placeholder="Fecha de nacimiento">
+                <input type="date" id="fecha_de_nacimiento" name="fecha_de_nacimiento" placeholder="Fecha de nacimiento">
                 <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario">
                 <input type="password" id="contraseña" name="contraseña" placeholder="Crea una contraseña segura">
                 <h4 id="subir_imagen">Sube una imagen de perfil:</h4>
-                <button type="button" id="img_perfil">Examinar...</button>
+                <input type="file" id="img_perfil" accept=".jpg,.png,.webp" required>
                 <div name="politica" id="politica">
                     <input type="checkbox" id="politica_privacidad" name="politica_privacidad">
                     <label>Acepto la <a href="blank">Poltica de privacidad</a></label>
                 </div>
-                <button type="button" id="confirmar_datos" onclick="location.href='versión_b.html'">Guardar datos y acceder</button>
+                <button type="button" id="confirmar_datos" >Guardar datos y acceder</button>
             </form>
         </main>
         <footer>

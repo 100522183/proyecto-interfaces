@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Se obtienen los elementos del DOM que se van a modificar
     const packElement = document.getElementById('pack1');
     const priceElement = document.getElementById('price1');
-    const titleElement = document.getElementById('título_pack_europeo');
-    const descriptionElement = document.getElementById('descripcion_pack_europeo');
+    const titleElement = document.getElementById('título_pack');
+    const descriptionElement = document.getElementById('descripcion_pack');
     const buyButton = document.getElementById('Comprar1');
     const prevButton = document.getElementById('bk');
     const nextButton = document.getElementById('fw');
@@ -78,4 +78,38 @@ document.addEventListener('DOMContentLoaded', () => {
     // Carga inicial del primer pack y del carrusel automático
     updatePackDisplay(currentPackIndex);
     resetAutoSlide();
+});
+
+document.getElementById('login_btn').addEventListener('click', function() {
+
+    function getCookie(nombre) {
+    let name = nombre + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+    }
+
+    const user = document.getElementById('username').value;
+    const pass = document.getElementById('password').value;
+    // Leer las cookies (o localStorage) con las credenciales registradas
+    const storedUser = getCookie('usuario');      // debe coincidir con la cookie almacenada
+    const storedPass = getCookie('contrasena');   // idem
+    // Validación:
+    if (user === storedUser && pass === storedPass) {
+        // Credenciales correctas: redirigir a versión B
+        window.location.href = 'versión_b.html';  // Redirect según W3Schools:contentReference[oaicite:5]{index=5}
+    } else {
+        // Credenciales incorrectas: mostrar mensaje de error
+        alert("Nombre de usuario o contraseña incorrectos.");
+    }
+});
+
+document.getElementById('register_btn').addEventListener('click', function() {
+  window.location.href = 'versión_a.html';
 });
