@@ -101,7 +101,9 @@ document.getElementById('login_btn').addEventListener('click', function() {
     const storedUser = getCookie('usuario');      // debe coincidir con la cookie almacenada
     const storedPass = getCookie('contrasena');   // idem
     // Validación:
-    if (user === storedUser && pass === storedPass) {
+    if (user === '' || pass === '') {
+        alert("Por favor, complete ambos campos.");
+    }else if(user === storedUser && pass === storedPass) {
         // Credenciales correctas: redirigir a versión B
         window.location.href = 'versión_b.html';  // Redirect según W3Schools:contentReference[oaicite:5]{index=5}
     } else {
