@@ -33,8 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.cookie = `usuario=${encodeURIComponent(usuario.value)}; path=/`;
         document.cookie = `contrasena=${encodeURIComponent(contraseña.value)}; path=/`;
 
-        alert('Registro exitoso. ¡Bienvenido/a!');
-        window.location.href = 'versión_b.html';
+        // Guardar imagen en localStorage
+        const file = imagen.files[0];
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const base64Image = e.target.result;
+            localStorage.setItem('imagenPerfil', base64Image);
+            
+            alert('Registro exitoso. ¡Bienvenido/a!');
+            window.location.href = 'versión_b.html';
+        };
+        reader.readAsDataURL(file);
     });
 
     function error(msg) {
