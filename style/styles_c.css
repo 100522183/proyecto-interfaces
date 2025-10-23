@@ -82,7 +82,7 @@ main{
     background-color: #fff;
 }
 
-#pack1 #título_pack_europeo{
+#pack1 #titulo_pack{
     font-size: 2em;
     border: 1px solid #000;
     background-color: #fff;
@@ -91,7 +91,7 @@ main{
     padding:0.5%;
 }
 
-#pack1 #descripcion_pack_europeo {
+#pack1 #descripcion_pack{
     font-size: 1.5em;
     border: 1px solid #000;
     background-color: #fff;
@@ -110,11 +110,11 @@ main{
     grid-column: 1/ span 1;
     grid-row: 2 / span 1;
 }
-#titulo_pack{
+#titulo_pack_largo{
     justify-self: start;
     margin-left: 5%;
 }
-#descripcion_pack{
+#descripcion_pack_largo{
     margin: 5%;
 }
 #right_container{
@@ -152,9 +152,9 @@ main{
     margin: 1%;
 }
 #metodo_pago{
-    grid-column: 1 / span 1;    
+    grid-column: 1 / span 2;    
     grid-row: 4 / span 1;   
-    justify-self: end;
+    justify-self: center;
     align-self: center;
 }
 #tipo_tarjeta-dropdown{

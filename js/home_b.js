@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Se obtienen los elementos del DOM que se van a modificar
     const packElement = document.getElementById('pack1');
     const priceElement = document.getElementById('price1');
-    const titleElement = document.getElementById('título_pack_europeo');
-    const descriptionElement = document.getElementById('descripcion_pack_europeo');
+    const titleElement = document.getElementById('titulo_pack');
+    const descriptionElement = document.getElementById('descripcion_pack');
     const buyButton = document.getElementById('Comprar1');
     const prevButton = document.getElementById('bk');
     const nextButton = document.getElementById('fw');
@@ -49,7 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
         titleElement.textContent = pack.title;
         descriptionElement.textContent = pack.description;
         packElement.style.backgroundImage = `url('${pack.image}')`;
-        buyButton.setAttribute('onclick', `location.href='${pack.link}'`);
+        buyButton.onclick = () => {
+            // Guardar los datos del pack actual en localStorage
+            localStorage.setItem('packSeleccionado', JSON.stringify(pack));
+            // Redirigir a la página de compra
+            location.href = pack.link;
+        };
     }
 
     // Función para reiniciar el intervalo del carrusel automático

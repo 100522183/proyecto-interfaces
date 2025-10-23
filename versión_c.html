@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>TRAVEL4EVER</title>
-
+        <script src="js/home_c.js" type="module" defer></script>
         <link rel="stylesheet" href="style/styles_c.css">
     </head>
     <body>
@@ -34,14 +34,14 @@
                 <section id="packs_de_viaje">
                     <div id="pack1">
                         <p id="price1">500$</p>
-                        <h2 id="título_pack_europeo">Pack Europeo</h2>
-                        <p id="descripcion_pack_europeo">Estocolmo, Berlín & Amsterdam: buses y hostales</p>
+                        <h2 id="titulo_pack">Pack Europeo</h2>
+                        <p id="descripcion_pack">Estocolmo, Berlín & Amsterdam: buses y hostales</p>
                     </div>
                 </section>
             </div>
             <section id="left_lower_container">
-                <h3 id="titulo_pack">Descripción del pack:</h3>
-                <p id="descripcion_pack">Embárcate en una aventura única por el corazón de Europa visitando Estocolmo, 
+                <h3 id="titulo_pack_largo">Descripción del pack:</h3>
+                <p id="descripcion_pack_largo">Embárcate en una aventura única por el corazón de Europa visitando Estocolmo, 
                     Berlín y Ámsterdam, tres ciudades llenas de historia, cultura y vida nocturna vibrante. Con este paquete 
                     tendrás cubierto el transporte en bus entre destinos y el alojamiento en hostales, una opción cómoda y 
                     accesible para mochileros y viajeros jóvenes que buscan nuevas experiencias. 
@@ -61,14 +61,14 @@
                     <h4 id="metodo_pago">Método de pago:</h4>
                     <select id="tipo_tarjeta-dropdown">
                         <option value="vi">Visa</option>
-                        <option value="Ma">Mastercard</option>
-                        <option value="Am">American Express</option>
+                        <option value="ma">Mastercard</option>
+                        <option value="am">American Express</option>
                     </select>
                     <input type="text" id="numero_tarjeta" name="numero_tarjeta" placeholder="Número de tarjeta">
                     <input type="text" id="titular" name="titular" placeholder="Titular de la tarjeta">
-                    <input type="text" id="fecha_de_caducidad" name="fecha_de_caducidad" placeholder="Fecha de caducidad">
+                    <input type="date" id="fecha_de_caducidad" name="fecha_de_caducidad" placeholder="Fecha de caducidad">
                     <input type="text" id="cvv" name="cvv" placeholder="Código CVV">
-                    <button type="button" id="boton_comprar" onclick="location.href='versión_b.html'">Comprar</button>
+                    <button type="button" id="boton_comprar" >Comprar</button>
                     <button type="reset" id="boton_borrar">Borrar</button>
                 </form>
             </aside>
